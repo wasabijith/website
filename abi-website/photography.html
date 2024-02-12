@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<head>
+    <body>
+        <div id="navbar"></div> <!-- This is where the navbar will be included -->
+        <script>
+            // Fetch and include the navbar using JavaScript
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        </script>
+    </body>
+    <section id="photography" class="section">
+        <div style="display: flex; justify-content: center;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2>Photography</h2>
+                <p style="text-align: justify;">
+                    Photography brings me immense solace and joy. I'm captivated by the serene beauty of landscapes and the
+                    intricate details of flora and fauna. Whether it's capturing the gentle sway of tall grasses or the
+                    vibrant colors of a sunset, each moment is a unique exploration through my lens. I'm also drawn to
+                    astrophotography, fascinated by the allure of photographing distant galaxies and celestial phenomena.
+                    Through my photography, I aim to not only document the wonders of the world around me but also to convey
+                    the deep sense of awe and appreciation I hold for nature's boundless wonders.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Instagram embedded content -->
+        <div style="display: flex; justify-content: center;">
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/_.capxure._/?utm_source=ig_embed&amp;utm_campaign=loading"
+                data-instgrm-version="14"
+                style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 0 auto; max-width:800px; min-width:326px; padding:0; width:100%;">
+                <!-- ... (The rest of the provided HTML code) ... -->
+            </blockquote>
+        </div>
+        <script async src="//www.instagram.com/embed.js"></script>
+    </section>
+</head>
+
+

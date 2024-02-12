@@ -1,7 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<head>
+
+<body>
+    <div id="navbar"></div> <!-- This is where the navbar will be included -->
+    <script>
+        // Fetch and include the navbar using JavaScript
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+</body>
 <section id="resume" class="section">
-    <h2>Resume</h2>
-    <!-- Add your resume content here -->
-    <iframe src="https://drive.google.com/file/d/1I92MVo6Ylxbl5toeznMnk7i2ZqiDRfmU/preview" width="800" height="1000" allow="autoplay"></iframe>    </section>
-<section id="skills" class="section">
+    <h1>Resume</h1>
+    <p>Here's my resume! You can download it <a
+            href="https://drive.google.com/uc?export=download&id=184Ox1aHeSR_DusB6hKtmwbiCFjqHvE2r">here</a>.</p>
+    <iframe src="https://drive.google.com/file/d/184Ox1aHeSR_DusB6hKtmwbiCFjqHvE2r/preview" width="800"
+        height="1175"></iframe>
+    </head>
+</section>
 </head>
